@@ -441,3 +441,106 @@ img{
     width: 250px;
     margin-right: 2.5rem;
 }
+
+/* ===================== SERVICES ===================== */
+.services{
+    position: relative;
+}
+
+.services__container{
+    position: relative;
+    row-gap: 3rem;  
+}
+
+
+.services__data{
+    text-align: center;
+}
+
+
+.services__description{
+    margin-bottom: 2rem;
+}
+
+.services__card{
+    width: 260px;
+    background-color: var(--container-color);
+    border: 2px solid var(--gray-border);
+    padding: 2rem 1rem 3.5rem;
+    transition: border-color 0.4s;
+    -webkit-transition: border-color 0.4s;
+    -moz-transition: border-color 0.4s;
+    -ms-transition: border-color 0.4s;
+    -o-transition: border-color 0.4s;
+}
+
+
+.services__card:hover{
+    border-color: var(--first-color);
+}
+
+.services__icon{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.services__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.services__shape{
+    position: absolute;
+    width: 100%;
+    height: 245px;
+    background-color: var(--black-color);
+    left: 0;
+    bottom: 0;
+}
+
+/* Swiper Class */
+.swiper{
+    margin-inline: initial;
+    padding-bottom: 4rem;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: '';
+}
+
+
+.swiper-button-next,
+.swiper-button-prev{
+    top: initial;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    background-color: var(--container-color);
+    box-shadow: 0 2px 8px hsla(255, 8%, 4%, 0.1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--title-color);
+}
+
+.swiper-button-prev{
+    left: calc(50% - 3rem);
+}
+
+.swiper-button-next{
+    right: calc(50% - 3rem);
+}
